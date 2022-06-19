@@ -38,7 +38,7 @@ class Evento():
         self._cadastro1 = {"Nome": self.__nome_event, "Data": self.__data_event, "Tipo": self.__tipo_event, "Valor": self.__valor_event}
         self._lista1.append(self._cadastro1)
         for c in self._lista1:
-          if self._lista1.count(self._cadastro1) > 1 and self._cadastro1 == self._cadastro1:
+          if self._cadastro1 == self._cadastro1 and self._lista1.count(self._cadastro1) > 1:
             self._lista1.remove(self._cadastro1)
             print('\nEsse Evento já foi cadastrado.')
           else:
